@@ -1,47 +1,32 @@
-/* donate css: */
+/* header css: */
 body {
     margin: 0;
 }
 
-/* 
-    i am not very good at website development so i copied your guys' code for the hero 
-    thank you guys for being awesome coders im sorry i am not competent enough
-    once you guys see this you can delete it lol i just wanted to lyk!
+/* to keep the header at the top of the page we have to make all the main content of the pages have a margin-top of 9vh
+   if you guys have a better solution feel free to change the code cus i am suck at css and i HATE IT!!!
 */
 
-.donate-hero {
-    background-image: url(''); /* insert a link of your chosen image! */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0;
-    text-align: center;
+.header {
+    position: fixed;
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: black; /* this changes the color of the "donate" text */
-    font-size: 4rem;
+    gap: 1rem;
+    align-items: center;
+    height: 9vh;
+    text-align: center;
+    background-color: pink; /* changes the color of the header box */
 }
 
-h1, p {
-    font-family: ''; /* if you want to change the font! */
+.header p {
+    color: black; /* changes the color of the text inside the header */
 }
 
-p {
-    margin: 20px 150px 20px 150px;
-    text-align: center; 
-}
-
-#red-text {
-    color: ''; /* changes the color of the "all donations are..." text */
-    font-size: 1.2rem;
-}
-
-.large-text {
-    font-size: 1.5rem;
-}
-
-.small-text {
-    font-size: 1.2rem;
+.header button {
+    padding: 10px 30px;
+    background-color: pink; /* changes the color of the button */
+    color: black; /* changes the color of the text inside the button */
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
 }
