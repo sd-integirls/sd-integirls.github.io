@@ -1,0 +1,170 @@
+/* Part of the following is from the about section :*/
+/* Taken from index css (global css):*/
+
+:root {
+    --primary-color: #5e4d9e;
+    --dark-color: #2c1b2d;
+    --light-color: #955b68;
+    --white-color: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* body styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    margin: 0;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* heading styles */
+h1, h2, h3 {
+    font-family: var(--header-font);
+    font-weight: 700;
+    margin: 10px 0 0 0; /* maybe this could be changed elsewhere? */
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2, h3 {
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/*homepage css:*/
+.hero {
+    background-image: url('https://img.freepik.com/free-vector/sunset-city-background_1092-42.jpg'); /* replace with your chapter's background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
+    height: 50vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+}
+
+/* animating fade-in title */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sponsor-section {
+    width: 100vw;
+    padding: 4rem 0;
+    background-color: #ffe6ea;
+    box-sizing: border-box;
+}
+
+.sponsor-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--dark-color);
+}
+
+/* Optional tier-specific colors */
+.sponsor-section.platinum h2 {
+    color: #c0c0c0;
+}
+
+.sponsor-section.gold h2 {
+    color: #d4af37;
+}
+
+.sponsor-section.silver h2 {
+    color: #999999;
+}
+
+.sponsor-section.bronze h2 {
+    color: #cd7f32;
+}
+
+.sponsor-section.partners h2 {
+    color: #6495ED;
+}
+
+.sponsor-section.contact h2 {
+    color: var(--dark-color);
+}
+
+.sponsor-section.contact {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+.sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+}
+
+.sponsor-logo {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-logo:hover {
+    transform: scale(1.05);
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.sponsor-logo:hover img {
+    filter: grayscale(0%);
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sponsor-logo {
+        width: 45vw;
+        height: auto;
+    }
+}
