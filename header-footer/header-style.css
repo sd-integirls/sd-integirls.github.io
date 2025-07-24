@@ -1,0 +1,33 @@
+/* header css: */
+body {
+    margin: 0;
+}
+
+/* to keep the header at the top of the page we have to make all the main content of the pages have a margin-top of 9vh
+   if you guys have a better solution feel free to change the code cus i am suck at css and i HATE IT!!!
+*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    height: 9vh;
+    text-align: center;
+    background-color: pink; /* changes the color of the header box */
+}
+
+.header p {
+    color: black; /* changes the color of the text inside the header */
+}
+
+.header button {
+    padding: 10px 30px;
+    background-color: pink; /* changes the color of the button */
+    color: black; /* changes the color of the text inside the button */
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
+}

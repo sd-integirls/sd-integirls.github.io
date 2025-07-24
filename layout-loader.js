@@ -5,11 +5,11 @@ function loadContent(page) {
 }
 
 // Load header and footer on page load
-fetch('header.html')
+fetch('header-footer/header.html')
   .then(response => response.text())
   .then(data => document.getElementById('header').innerHTML = data);
 
-fetch('footer.html')
+fetch('header-footer/footer.html')
   .then(response => response.text())
   .then(data => document.getElementById('footer').innerHTML = data);
 
