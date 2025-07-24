@@ -1,0 +1,80 @@
+/* Part of the following is from the about section (global css):*/
+:root {
+    --primary-color: #5e4d9e;
+    --dark-color: #2c1b2d;
+    --light-color: #955b68;
+    --white-color: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* body styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    margin: 0;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* heading styles */
+h1, h2, h3 {
+    font-family: var(--header-font);
+    font-weight: 700;
+    margin: 10px 0 0 0; /* maybe this could be changed elsewhere? */
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2, h3 {
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/*homepage css:*/
+.hero {
+    background-image: url('https://img.freepik.com/free-vector/sunset-city-background_1092-42.jpg'); /* replace with your chapter's background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+}
+
+.mission{
+    background-color: var(--light-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.long-announcement {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+/* animating fade-in title */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
