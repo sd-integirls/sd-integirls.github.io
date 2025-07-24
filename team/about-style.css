@@ -34,7 +34,7 @@ h1, h2, h3 {
 .about-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1346125184/photo/group-of-successful-multiethnic-business-team.jpg?s=612x612&w=0&k=20&c=5FHgRQZSZed536rHji6w8o5Hco9JVMRe8bpgTa69hE8=') no-repeat center center/cover;
     color: var(--white-color);
-    height: 80vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;

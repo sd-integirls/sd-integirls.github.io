@@ -10,11 +10,11 @@ body {
 */
 
 .donate-hero {
-    background-image: url(''); /* insert a link of your chosen image! */
+    background-image: url('https://img.freepik.com/free-vector/sunset-city-background_1092-42.jpg'); /* insert a link of your chosen image! */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 50vh;
     margin: 0;
     text-align: center;
     display: flex;
