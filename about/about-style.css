@@ -1,0 +1,100 @@
+/* basic colors and stuff */
+:root {
+    --primary-color: #5e4d9e;
+    --dark-color: #333333;
+    --light-color: #f4f4f4;
+    --white-color: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+/* body styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    margin: 0;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* heading styles */
+h1, h2, h3 {
+    font-family: var(--header-font);
+    font-weight: 700;
+}
+
+/* about page stuff -- u can change the url of the photo depending on what you want the header to be */
+
+.about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1346125184/photo/group-of-successful-multiethnic-business-team.jpg?s=612x612&w=0&k=20&c=5FHgRQZSZed536rHji6w8o5Hco9JVMRe8bpgTa69hE8=') no-repeat center center/cover;
+    color: var(--white-color);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+}
+
+.team-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--dark-color);
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: var(--light-color);
+    padding: 1.5rem;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--white-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #555;
+}
