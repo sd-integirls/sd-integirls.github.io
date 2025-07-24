@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* compete css: */
+body {
+    margin: 30px;
+}
+
+/* to keep the header at the top of the page we have to make all the main content of the pages have a margin-top of 9vh
+   if you guys have a better solution feel free to change the code cus i am suck at css and i HATE IT!!!
+*/
+
+.header {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	align-items: center;
+	height: 9vh;
+	text-align: center;
+	background-color: pink; /* changes the color of the header box */
+	font-family: lora;
+	font-size: 40px;
+	
+}
+
+
+
+.header p {
+    color: black; /* changes the color of the text inside the header */
+}
+
+.header button {
+    padding: 10px 30px;
+    background-color: pink; /* changes the color of the button */
+    color: black; /* changes the color of the text inside the button */
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+
+/* body styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--white-color);
+    margin: 120px;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+/* heading styles */
+h1, h2, h3 {
+    font-family: var(--header-font);
+    font-weight: 700;
+    margin: 10px 0 0 0; /* maybe this could be changed elsewhere? */
+}
+
+h1 {
+	font-size: 40px;
+	font-family: Lora;
+	color: #000;
+	text-align:center
+}
+
+
+
+h2, h3 {
+    font-size: 2rem;
+}
+
+p{
+	font-size: 16px;
+}
+
+
+.upcoming h2 {
+	font-family: Verdana, Geneva, sans-serif;
+	
+	font-size: 40px
+}
+.upcoming h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 60px
+}
+
+
+
+
+
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+.left_box {
+  float: left;
+  width: 680px;
+  height: 838px;
+ 
+}
+.right_box {
+  margin-left: 720px;
+  width: 500px;
+  height: 838px;
+
+}
+
+
+
+
+.p1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 36px;
+	color: #CD5C5C;
+}
+.p5 {
+	font-family: Arial, Helvetica, sans-serif;
+		font-size: 26px;
+	color: #CD5C5C;
+}
+.p2 {
+	font-family: Comic Sans MS, cursive;
+	font-size: 22px;
+}
+.p3 {
+	font-size: 22px;
+	color: #CD5C5C;
+}
+
+
+.custom-button {
+	background-color: #CD5C5C;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	width: 400px;
+	text-align:center;
+	font-size:20px;
+	display: block;
+	margin: 0 auto;
+}
+
+.custom-button:hover {
+background-color: #CD5C5C;
+}
+
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+
+.slider img {
+    width: 100%;
+    display: block;
+}
+
+
+button.prev, button.next {
+
+    position: absolute;
+
+
+    top: 50%;
+
+
+    transform: translateY(-50%);
+
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+    color: white;
+
+
+    border: none;
+
+
+    padding: 10px;
+
+
+    cursor: pointer;
+
+
+}
+
+
+button.prev {
+
+
+    left: 10px;
+
+
+}
+
+
+button.next {
+
+
+    right: 10px;
+
+}
+
+
+
+
+
+
