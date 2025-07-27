@@ -169,6 +169,42 @@ We hope to see everyone at our next competition! </p>
         
 </main>
 
+ <!-- image slider controller-->
+<script>
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const slides = document.querySelectorAll('.slide');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentIndex = 0;
+
+prevButton.addEventListener('click', () => {
+
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSliderPosition();
+    }
+});
+
+
+nextButton.addEventListener('click', () => {
+
+    if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        updateSliderPosition();
+    }
+
+
+});
+
+
+function updateSliderPosition() {
+    sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+</script>
+
+
     <!-- Footer -->
     <div class="footer">
         <div>© 2025 InteGirls LA/OC</div>
