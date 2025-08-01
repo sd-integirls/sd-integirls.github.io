@@ -2,7 +2,8 @@
 :root {
     --primary-color: #5e4d9e;
     --dark-color: #2c1b2d;
-    --light-color: #955b68;
+    --light-color: #C69AA4;
+    --notsolight-color: #B58A94;
     --white-color: #ffffff;
     --header-font: 'Montserrat', sans-serif;
     --body-font: 'Lato', sans-serif;
@@ -20,7 +21,7 @@ body {
 }
 
 /* heading styles */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--header-font);
     font-weight: 700;
     margin: 10px 0 0 0; /* maybe this could be changed elsewhere? */
@@ -32,6 +33,11 @@ h1 {
 
 h2, h3 {
     font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 p{
@@ -55,6 +61,12 @@ p{
 
 .mission{
     background-color: var(--light-color);
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.faq{
+    background-color: var(--notsolight-color);
     text-align: center;
     padding: 10px 80px;
 }
