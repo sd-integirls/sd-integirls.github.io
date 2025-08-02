@@ -102,6 +102,17 @@ p{
     align-items: center;
 }
 
+/* Logo styling for circular appearance */
+.header-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .top-bar a {
     color: black;
     text-decoration: none;
