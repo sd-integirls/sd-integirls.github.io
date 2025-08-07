@@ -7,7 +7,7 @@ body {
    if you guys have a better solution feel free to change the code cus i am suck at css and i HATE IT!!!
 */
 
-.header {
+.announcement {
     position: fixed;
     width: 100%;
     display: flex;
@@ -19,11 +19,11 @@ body {
     background-color: pink; /* changes the color of the header box */
 }
 
-.header p {
+.announcement p {
     color: black; /* changes the color of the text inside the header */
 }
 
-.header button {
+.announcement button {
     padding: 10px 30px;
     background-color: pink; /* changes the color of the button */
     color: black; /* changes the color of the text inside the button */

@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Donate</title>
-    <link rel="stylesheet" href="announcement-style.css"> 
+    <style>
+        body {
+            margin: 0;
+        }
+        .announcement {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            align-items: center;
+            height: 9vh;
+            text-align: center;
+            background-color: pink; /* changes the color of the header box */
+        }
+
+        .announcement p {
+            color: black; /* changes the color of the text inside the header */
+        }
+
+        .announcement button {
+            padding: 10px 30px;
+            background-color: pink; /* changes the color of the button */
+            color: black; /* changes the color of the text inside the button */
+            border-radius: 5px;
+            border-width: 1px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
+
+    <div class="announcement">
         <p>
             2024 Winter Math Competition on Dec 14th
         </p>

@@ -14,93 +14,103 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap">
 </head>
 <body>
-    <!-- Header -->
-    <div class="top-bar">
-        <table style="width: 100%;">
-            <tr>
-                <td style="text-align: left;">
-                    <span style="line-height: 1"><b>  </b></span>
-                    <img src="header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
-                    <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
-                </td>
-                <td style="text-align: right;">
-                    <a href="index.html">Home</a> |
-                    <a href="compete/index.html">Compete</a> |
-                    <a href="pastcontests/index.html">Past Contests</a> |
-                    <a href="sponsors/index.html">Sponsors</a> |
-                    <a href="donate/index.html">Donate</a> |
-                    <a href="team/index.html">Our Team</a>|
-                    <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <main>
-        <section class="hero">
-            <h1 class="fade-in">INTEGIRLS [Chapter Name]</h1>
-        </section>
-
-        <!-- Add your mission statement below -->
-        <section class="mission">
-            <h2>Our Mission</h2>
-            <p>INTEGIRLS is a nonprofit teen-led organization with a mission to bridge the gender gap in STEM through exciting math opportunities! All our programs are offered free of cost to our participants.</p>
-        </section>
-
-        <!-- Add something you want to highlight on the homepage, such as an upcoming event, below! (placeholder modified from Bay Area website)-->
-        <section class="long-announcement">
-            <h2>Upcoming Events</h2>
-            <p>For the 2025-2026 school year, INTEGIRLS [Chapter Name] will be hosting two competitions, one in the fall and one in the spring. We will also be hosting [events].
-                Our events are open to all female and non binary-identifying middle and high schoolers. Both events are free of charge for everyone. No prior experience is required!
-                Sign-ups for the fall event will open once the date is finalized!</p>
-        </section>
-
-        <section class="faq">
-            <h2>FAQs (Frequently Asked Questions)</h2>
-            <table>
+    <!--Announcement bar-->
+    <div id="announcement-placeholder"></div>
+    <script>
+    fetch("announcement/announcement.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("announcement-placeholder").innerHTML = data;
+        });
+    </script>
+    <div class="main-body">
+        <!-- Header -->
+        <div class="top-bar">
+            <table style="width: 100%;">
                 <tr>
-                    <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
-                        <h4>I’m interested but have no math competition experience. Can I still attend?</h4><br>
-                        Of course, you should really attend this competition. In the past, many people have stated that INTEGIRLS gave them an entry into math competitions and they had no idea how it was until they attended the event. If you would like any pointers to understand how to prepare, you can feel free to email us. Hope to see you at our event(s).
+                    <td style="text-align: left;">
+                        <span style="line-height: 1"><b>  </b></span>
+                        <img src="header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
+                        <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
                     </td>
-                    <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
-                        <h4>I do not have a INTEGIRLS Chapter near my area, but I am interested in participating in the competition. Can I still attend?</h4><br>
-                        We also encourage students not only from the [Chapter Name] to attend, but also other areas as well. You may reach out to us at the links provided at the bottom of this page.
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
-                        <h4>Who can I contact if I have any questions?</h4><br>
-                        You can contact us through Email or Instagram at the links provided at the bottom of this page. It may take up to 2 weeks to get a reply from us through email. If it is urgent, you can message us on Instagram or add "URGENT" is subject line of your email. 
-                    </td>
-                    <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
-                        <h4>I do not identify as female, but I would like to participate. How can I do that?</h4><br>
-                        If you do not identify as female or non-binary, we encourage you to check out other opportunities we may share. You can contact <a href="mailto:la@integirls.org">la@integirls.org</a> to find more activities apt for you.
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
-                        <h4>How can I contribute?</h4><br>
-                        You may choose to volunteer for us by emailing us at [chapter]@integirls.org or can donate to our non-profit <a href="https://integirls.github.io/donate/index.html">here</a>. You can also email us at <a href="mailto:la@integirls.org">la@integirls.org</a> to receive more information about how you can help. YOUR HELP MAKES A DIFFERENCE TO US. 
-                    </td>
-                    <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
-                        <h4>How many competitions will you conduct throughout the year?</h4><br>
-                        We are targeting to host 2 competitions a year: one in the fall and one in the spring. More details about these competitions will be available on this website soon.
+                    <td style="text-align: right;">
+                        <a href="index.html">Home</a> |
+                        <a href="compete/index.html">Compete</a> |
+                        <a href="pastcontests/index.html">Past Contests</a> |
+                        <a href="sponsors/index.html">Sponsors</a> |
+                        <a href="donate/index.html">Donate</a> |
+                        <a href="team/index.html">Our Team</a>|
+                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
                     </td>
                 </tr>
             </table>
-        </section>
+        </div>
 
-    </main>
+        <main>
+            <section class="hero">
+                <h1 class="fade-in">INTEGIRLS [Chapter Name]</h1>
+            </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div>© 2025 INTEGIRLS [chapter]</div>
-        <div>
-            <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
-            <a href="mailto:[chapter]@integirls.org">chapter@[chapter].org</a>
+            <!-- Add your mission statement below -->
+            <section class="mission">
+                <h2>Our Mission</h2>
+                <p>INTEGIRLS is a nonprofit teen-led organization with a mission to bridge the gender gap in STEM through exciting math opportunities! All our programs are offered free of cost to our participants.</p>
+            </section>
+
+            <!-- Add something you want to highlight on the homepage, such as an upcoming event, below! (placeholder modified from Bay Area website)-->
+            <section class="long-announcement">
+                <h2>Upcoming Events</h2>
+                <p>For the 2025-2026 school year, INTEGIRLS [Chapter Name] will be hosting two competitions, one in the fall and one in the spring. We will also be hosting [events].
+                    Our events are open to all female and non binary-identifying middle and high schoolers. Both events are free of charge for everyone. No prior experience is required!
+                    Sign-ups for the fall event will open once the date is finalized!</p>
+            </section>
+
+            <section class="faq">
+                <h2>FAQs (Frequently Asked Questions)</h2>
+                <table>
+                    <tr>
+                        <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
+                            <h4>I’m interested but have no math competition experience. Can I still attend?</h4><br>
+                            Of course, you should really attend this competition. In the past, many people have stated that INTEGIRLS gave them an entry into math competitions and they had no idea how it was until they attended the event. If you would like any pointers to understand how to prepare, you can feel free to email us. Hope to see you at our event(s).
+                        </td>
+                        <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
+                            <h4>I do not have a INTEGIRLS Chapter near my area, but I am interested in participating in the competition. Can I still attend?</h4><br>
+                            We also encourage students not only from the [Chapter Name] to attend, but also other areas as well. You may reach out to us at the links provided at the bottom of this page.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
+                            <h4>Who can I contact if I have any questions?</h4><br>
+                            You can contact us through Email or Instagram at the links provided at the bottom of this page. It may take up to 2 weeks to get a reply from us through email. If it is urgent, you can message us on Instagram or add "URGENT" is subject line of your email. 
+                        </td>
+                        <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
+                            <h4>I do not identify as female, but I would like to participate. How can I do that?</h4><br>
+                            If you do not identify as female or non-binary, we encourage you to check out other opportunities we may share. You can contact <a href="mailto:la@integirls.org">la@integirls.org</a> to find more activities apt for you.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
+                            <h4>How can I contribute?</h4><br>
+                            You may choose to volunteer for us by emailing us at [chapter]@integirls.org or can donate to our non-profit <a href="https://integirls.github.io/donate/index.html">here</a>. You can also email us at <a href="mailto:la@integirls.org">la@integirls.org</a> to receive more information about how you can help. YOUR HELP MAKES A DIFFERENCE TO US. 
+                        </td>
+                        <td style="padding-left: 20px; padding-right: 20px; text-align: left;">
+                            <h4>How many competitions will you conduct throughout the year?</h4><br>
+                            We are targeting to host 2 competitions a year: one in the fall and one in the spring. More details about these competitions will be available on this website soon.
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div>© 2025 INTEGIRLS [chapter]</div>
+            <div>
+                <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
+                <a href="mailto:[chapter]@integirls.org">chapter@[chapter].org</a>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

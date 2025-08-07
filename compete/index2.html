@@ -8,6 +8,15 @@
 </head>
 
 <body>
+    <!--Announcement bar-->
+    <div id="announcement-placeholder"></div>
+    <script>
+    fetch("announcement/announcement.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("announcement-placeholder").innerHTML = data;
+        });
+    </script>
     <!-- Header -->
     <div class="top-bar">
         <table style="width: 100%;">
