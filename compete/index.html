@@ -14,217 +14,219 @@
 </head>
 <body>
     <!--Announcement bar-->
-    <div id="announcement-placeholder"></div>
-    <script>
-    fetch("/announcement/announcement.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("announcement-placeholder").innerHTML = data;
-        });
-    </script>
-    <!-- Header -->
-    <div class="top-bar">
-        <table style="width: 100%;">
-            <tr>
-                <td style="text-align: left;">
-                    <span style="line-height: 1"><b>  </b></span>
-                    <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
-                    <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
-                </td>
-                <td style="text-align: right;">
-                    <a href="../index.html">Home</a> |
-                    <a href="index.html">Compete</a> |
-                    <a href="../pastcontests/index.html">Past Contests</a> |
-                    <a href="../sponsors/index.html">Sponsors</a> |
-                    <a href="../donate/index.html">Donate</a> |
-                    <a href="../team/index.html">Our Team</a> |
-                    <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                </td>
-            </tr>
-        </table>
+    <div id="announcement-placeholder">
+        <script>
+            fetch("/announcement/announcement.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("announcement-placeholder").innerHTML = data;
+            });
+        </script>
     </div>
+    <div class="main-body">
+        <!-- Header -->
+        <div class="top-bar">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: left;">
+                        <span style="line-height: 1"><b>  </b></span>
+                        <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
+                        <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="../index.html">Home</a> |
+                        <a href="index.html">Compete</a> |
+                        <a href="../pastcontests/index.html">Past Contests</a> |
+                        <a href="../sponsors/index.html">Sponsors</a> |
+                        <a href="../donate/index.html">Donate</a> |
+                        <a href="../team/index.html">Our Team</a> |
+                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-    <main>
-        <section class="hero">
-            <h1 class="fade-in">Compete</h1>
-        </section>
+        <main>
+            <section class="hero">
+                <h1 class="fade-in">Compete</h1>
+            </section>
 
-        <!-- Add your next competition below -->
-        <section class="upcoming">
-            <h2 align="center">12/14/2024 | 10AM to 3PM</h2>
-		  <h1 align="center">Winter 2024</h1>
-		  <h2 align="center">Math Competition</h2>
-        </section>
+            <!-- Add your next competition below -->
+            <section class="upcoming">
+                <h2 align="center">12/14/2024 | 10AM to 3PM</h2>
+            <h1 align="center">Winter 2024</h1>
+            <h2 align="center">Math Competition</h2>
+            </section>
 
-        <!-- Add your event poster image and registration linke below -->
-       
-       
-       
-       
-       
-          
-  <div class="container">
-            <div class="left_box">
-                
-               <img src="compete-images/poster.jpg" alt="Citadel" width="680" height="838">  
-      
-          
-                
-                </div>
-              
-            <div class="right_box">
-              <p align="center" class="p1"> DEC 14TH | 10AM-3PM</p>
-              
-              <p align="center" class="p2"> <strong>Join us for a beginner-friendly math competition (team and individual), estimation, speaker event, awards ceremony, and provided lunch! </strong></p>
-              <br>
+            <!-- Add your event poster image and registration links below -->
+        
+        
+        
+        
+        
             
-              
-              <p align="center" class="p3"><a href="https://goo.gl/maps/hhKmfGc3SyF24d3n7" style="color:#CD5C5C" >Bioscience Education Center at Montgomery College Germantown Campus</a></p>
-              
-             
-             <form action="https://docs.google.com/forms/d/e/1FAIpQLSfXRcSAXx8iRolRmOzMqq0xb1n8OrI8rrPpF0ebp2rERPZrxA/viewform?usp=sf_link">            
-             <button class="custom-button">SIGN UP (registration closed 12/7)</button>
-             </form>
-              
-              <br>
-             <br>
-              
-              <p align="center">Any questions? Email us at dc@integirls.org                </p>
-              <p align="center" class="p5"><strong>OPEN TO GIRLS AND NONBINARY </strong></p>
+    <div class="container">
+                <div class="left_box">
+                    
+                <img src="compete-images/poster.jpg" alt="Citadel" width="680" height="838">  
+        
+            
+                    
+                    </div>
+                
+                <div class="right_box">
+                <p align="center" class="p1"> DEC 14TH | 10AM-3PM</p>
+                
+                <p align="center" class="p2"> <strong>Join us for a beginner-friendly math competition (team and individual), estimation, speaker event, awards ceremony, and provided lunch! </strong></p>
+                <br>
+                
+                
+                <p align="center" class="p3"><a href="https://goo.gl/maps/hhKmfGc3SyF24d3n7" style="color:#CD5C5C" >Bioscience Education Center at Montgomery College Germantown Campus</a></p>
+                
+                
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfXRcSAXx8iRolRmOzMqq0xb1n8OrI8rrPpF0ebp2rERPZrxA/viewform?usp=sf_link">            
+                <button class="custom-button">SIGN UP (registration closed 12/7)</button>
+                </form>
+                
+                <br>
+                <br>
+                
+                <p align="center">Any questions? Email us at dc@integirls.org                </p>
+                <p align="center" class="p5"><strong>OPEN TO GIRLS AND NONBINARY </strong></p>
+                </div>
+                
+        
+            
             </div>
             
-      
-          
-         </div>
-           
-          
-          
-   
-    <div style="text-align: center;">
-        
-       <iframe src="https://drive.google.com/embeddedfolderview?id=1k_jeOZIqARaj830prpRc6BBJeyY_cqvP" style="width:1000px; height:230px; border:0"></iframe>
-
- </div>
-
-        
-
-<div>
-        <!-- Add something you want to show your appreciation)-->
-   <section class="thanks">
-   
-     
-     
-     <p align="center">Thank you to everyone who participated in the INTEGIRLS DC 2024 Winter Competition! Thanks to the hard work of the INTEGIRLS DC team and our generous sponsors, we were able to host 213 girls and non-binary people from the DC metropolitan area at our in-person event on 12/14. </p>
-
-<p align="center">
-It was remarkable to see the culmination of months of planning and preparation result in such a successful competition. We hope our competition was able to foster a feeling of community or belonging in every attendee, whether a first-time or seasoned competitor. We are incredibly proud of all participants for choosing to challenge themselves.
-</p>
-
-<p align="center">
-
-Special thank you to AoPS Gaithersburg, Wolfram, Akamai Foundation, Jane Street, SIG, AwesomeMath, and David Morin for sponsoring and donating prizes.
-</p>
-
-<p align="center">
-We hope to see everyone at our next competition! </p>
-        </section>
-  
-  </div>
-        
-        <br>
-        <br>
-        
- 
- 
- 
- <div class="slider">
-    <div class="slider-wrapper">
-        <div class="slide"><img src="./compete-images/event01.jpg" alt="Image1"></div>
-
-        <div class="slide"><img src="./compete-images/event02.jpg" alt="Image2"></div>
-
-        <div class="slide"><img src="./compete-images/event03.jpg" alt="Image3"></div>
-        
-        <div class="slide"><img src="./compete-images/event04.jpg" alt="Image4"></div>
-         
-        <div class="slide"><img src="./compete-images/event05.jpg" alt="Image5"></div>
+            
+            
+    
+        <div style="text-align: center;">
+            
+        <iframe src="https://drive.google.com/embeddedfolderview?id=1k_jeOZIqARaj830prpRc6BBJeyY_cqvP" style="width:1000px; height:230px; border:0"></iframe>
 
     </div>
 
-     <button class="prev">Prev</button>
+            
 
-
-     <button class="next">Next</button>
-
-
-
-</div>
-
-
- 
- 
- 
-  <br>
-  <br>
+    <div>
+            <!-- Add something you want to show your appreciation)-->
+    <section class="thanks">
+    
         
-
- 
- 
- 
- 
- <div style="text-align: center;">
- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXRcSAXx8iRolRmOzMqq0xb1n8OrI8rrPpF0ebp2rERPZrxA/viewform?embedded=true" width="640" height="300" frameborder="0" marginheight="0" marginwidth="0" align="middle">Sign-Ups for the 2024 D.C. Winter INTEGIRLS Math Competition</iframe>
-</div>
-
-
-   
         
-</main>
+        <p align="center">Thank you to everyone who participated in the INTEGIRLS DC 2024 Winter Competition! Thanks to the hard work of the INTEGIRLS DC team and our generous sponsors, we were able to host 213 girls and non-binary people from the DC metropolitan area at our in-person event on 12/14. </p>
 
- <!-- image slider controller-->
-<script>
-const sliderWrapper = document.querySelector('.slider-wrapper');
-const slides = document.querySelectorAll('.slide');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
+    <p align="center">
+    It was remarkable to see the culmination of months of planning and preparation result in such a successful competition. We hope our competition was able to foster a feeling of community or belonging in every attendee, whether a first-time or seasoned competitor. We are incredibly proud of all participants for choosing to challenge themselves.
+    </p>
 
-let currentIndex = 0;
+    <p align="center">
 
-prevButton.addEventListener('click', () => {
+    Special thank you to AoPS Gaithersburg, Wolfram, Akamai Foundation, Jane Street, SIG, AwesomeMath, and David Morin for sponsoring and donating prizes.
+    </p>
 
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateSliderPosition();
+    <p align="center">
+    We hope to see everyone at our next competition! </p>
+            </section>
+    
+    </div>
+            
+            <br>
+            <br>
+            
+    
+    
+    
+    <div class="slider">
+        <div class="slider-wrapper">
+            <div class="slide"><img src="./compete-images/event01.jpg" alt="Image1"></div>
+
+            <div class="slide"><img src="./compete-images/event02.jpg" alt="Image2"></div>
+
+            <div class="slide"><img src="./compete-images/event03.jpg" alt="Image3"></div>
+            
+            <div class="slide"><img src="./compete-images/event04.jpg" alt="Image4"></div>
+            
+            <div class="slide"><img src="./compete-images/event05.jpg" alt="Image5"></div>
+
+        </div>
+
+        <button class="prev">Prev</button>
+
+
+        <button class="next">Next</button>
+
+
+
+    </div>
+
+
+    
+    
+    
+    <br>
+    <br>
+            
+
+    
+    
+    
+    
+    <div style="text-align: center;">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXRcSAXx8iRolRmOzMqq0xb1n8OrI8rrPpF0ebp2rERPZrxA/viewform?embedded=true" width="640" height="300" frameborder="0" marginheight="0" marginwidth="0" align="middle">Sign-Ups for the 2024 D.C. Winter INTEGIRLS Math Competition</iframe>
+    </div>
+
+
+    
+            
+    </main>
+
+    <!-- image slider controller-->
+    <script>
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    const slides = document.querySelectorAll('.slide');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentIndex = 0;
+
+    prevButton.addEventListener('click', () => {
+
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSliderPosition();
+        }
+    });
+
+
+    nextButton.addEventListener('click', () => {
+
+        if (currentIndex < slides.length - 1) {
+            currentIndex++;
+            updateSliderPosition();
+        }
+
+
+    });
+
+
+    function updateSliderPosition() {
+        sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-});
+
+    </script>
 
 
-nextButton.addEventListener('click', () => {
-
-    if (currentIndex < slides.length - 1) {
-        currentIndex++;
-        updateSliderPosition();
-    }
-
-
-});
-
-
-function updateSliderPosition() {
-    sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-</script>
-
-
-    <!-- Footer -->
-    <div class="footer">
-        <div>© 2025 INTEGIRLS [chapter]</div>
-        <div>
-            <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
-            <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
+        <!-- Footer -->
+        <div class="footer">
+            <div>© 2025 INTEGIRLS [chapter]</div>
+            <div>
+                <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
+                <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

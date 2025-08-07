@@ -1,11 +1,23 @@
-/* header css: */
-body {
-    margin: 0;
+/* announcement css: */
+/* IMPORTANT NOTE: the style of the announcement bar is actually inside the html file so it can be loaded into every single page, this extra file is just for cautionary purposes */
+
+:root {
+    --primary-color: #5e4d9e;
+    --dark-color: #2c1b2d;
+    --light-color: #C69AA4;
+    --notsolight-color: #B58A94;
+    --white-color: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0px;
 }
 
-/* to keep the header at the top of the page we have to make all the main content of the pages have a margin-top of 9vh
-   if you guys have a better solution feel free to change the code cus i am suck at css and i HATE IT!!!
-*/
+body {
+    margin: 0;
+    font-family: var(--body-font)
+}
+
 
 .announcement {
     position: fixed;

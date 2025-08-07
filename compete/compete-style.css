@@ -6,9 +6,10 @@ body {
     margin: 30px;
 }
 
-/* to keep the header at the top of the page we have to make all the main content of the pages have a margin-top of 9vh
-   if you guys have a better solution feel free to change the code cus i am suck at css and i HATE IT!!!
-*/
+.main-body {
+    padding-top: 9vh;
+}
+
 
 .header {
 	position: fixed;
@@ -22,10 +23,7 @@ body {
 	background-color: pink; /* changes the color of the header box */
 	font-family: lora;
 	font-size: 40px;
-	
 }
-
-
 
 .header p {
     color: black; /* changes the color of the text inside the header */

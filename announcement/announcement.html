@@ -1,3 +1,8 @@
+<!-- announcement bar will always be at the top so if you want to remove it, you have to remove the code from every single file
+    which is quite the work, so i'd recommend u just put placeholder text and then remove the button if u have no link
+    comment the button code by doing (cmd + /) or (ctrl + /)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +10,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Donate</title>
     <style>
+        :root {
+            --primary-color: #5e4d9e;
+            --dark-color: #2c1b2d;
+            --light-color: #C69AA4;
+            --notsolight-color: #B58A94;
+            --white-color: #ffffff;
+            --header-font: 'Montserrat', sans-serif;
+            --body-font: 'Lato', sans-serif;
+            margin: 0 auto;
+            padding: 0 0px;
+        }
+        
         body {
             margin: 0;
+            font-family: var(--body-font);
         }
+
         .announcement {
             position: fixed;
             width: 100%;
@@ -18,10 +37,13 @@
             height: 9vh;
             text-align: center;
             background-color: pink; /* changes the color of the header box */
+            z-index: 9999;
         }
 
-        .announcement p {
-            color: black; /* changes the color of the text inside the header */
+        .announcement span {
+            color: black;
+            margin: 0;
+            padding: 0;
         }
 
         .announcement button {
@@ -37,9 +59,9 @@
 <body>
 
     <div class="announcement">
-        <p>
+        <span>
             2024 Winter Math Competition on Dec 14th
-        </p>
+        </span>
         <!-- insert the link of whatever you want the button to lead to, like a competition registration form -->
         <a href="">
             <button>REGISTER</button>

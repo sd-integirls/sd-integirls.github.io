@@ -1,13 +1,23 @@
 /* donate css: */
+:root {
+    --primary-color: #5e4d9e;
+    --dark-color: #2c1b2d;
+    --light-color: #C69AA4;
+    --notsolight-color: #B58A94;
+    --white-color: #ffffff;
+    --header-font: 'Montserrat', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0px;
+}
 body {
     margin: 0;
+    font-family: var(--body-font);
 }
 
-/* 
-    i am not very good at website development so i copied your guys' code for the hero 
-    thank you guys for being awesome coders im sorry i am not competent enough
-    once you guys see this you can delete it lol i just wanted to lyk!
-*/
+main-body {
+    padding-top: 9vh;
+}
 
 .donate-hero {
     background-image: url('https://img.freepik.com/free-vector/sunset-city-background_1092-42.jpg'); /* insert a link of your chosen image! */
@@ -24,8 +34,8 @@ body {
     font-size: 4rem;
 }
 
-h1, p {
-    font-family: ''; /* if you want to change the font! */
+h1 {
+    font-family: var(--header-font);
 }
 
 p {

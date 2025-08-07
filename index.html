@@ -15,14 +15,15 @@
 </head>
 <body>
     <!--Announcement bar-->
-    <div id="announcement-placeholder"></div>
-    <script>
-    fetch("announcement/announcement.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("announcement-placeholder").innerHTML = data;
-        });
-    </script>
+    <div id="announcement-placeholder">
+        <script>
+            fetch("/announcement/announcement.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("announcement-placeholder").innerHTML = data;
+            });
+        </script>
+    </div>
     <div class="main-body">
         <!-- Header -->
         <div class="top-bar">
@@ -39,7 +40,7 @@
                         <a href="pastcontests/index.html">Past Contests</a> |
                         <a href="sponsors/index.html">Sponsors</a> |
                         <a href="donate/index.html">Donate</a> |
-                        <a href="team/index.html">Our Team</a>|
+                        <a href="team/index.html">Our Team</a> |
                         <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
                     </td>
                 </tr>

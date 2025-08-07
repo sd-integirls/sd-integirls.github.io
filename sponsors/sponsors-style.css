@@ -21,6 +21,10 @@ body {
     line-height: 1.6;
 }
 
+.main-body{
+    padding-top: 9vh;
+}
+
 /* heading styles */
 h1, h2, h3 {
     font-family: var(--header-font);

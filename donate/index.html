@@ -14,64 +14,67 @@
 </head>
 <body>
     <!--Announcement bar-->
-    <div id="announcement-placeholder"></div>
-    <script>
-    fetch("/announcement/announcement.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("announcement-placeholder").innerHTML = data;
-        });
-    </script>
-    <!-- Header -->
-    <div class="top-bar">
-        <table style="width: 100%;">
-            <tr>
-                <td style="text-align: left;">
-                    <span style="line-height: 1"><b>  </b></span>
-                    <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
-                    <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
-                </td>
-                <td style="text-align: right;">
-                    <a href="../index.html">Home</a> |
-                    <a href="../compete/index.html">Compete</a> |
-                    <a href="../pastcontests/index.html">Past Contests</a> |
-                    <a href="../sponsors/index.html">Sponsors</a> |
-                    <a href="index.html">Donate</a> |
-                    <a href="../team/index.html">Our Team</a> |
-                    <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                </td>
-            </tr>
-        </table>
+    <div id="announcement-placeholder">
+        <script>
+            fetch("/announcement/announcement.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("announcement-placeholder").innerHTML = data;
+            });
+        </script>
     </div>
+    <div class="main-body">
+        <!-- Header -->
+        <div class="top-bar">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: left;">
+                        <span style="line-height: 1"><b>  </b></span>
+                        <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
+                        <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="../index.html">Home</a> |
+                        <a href="../compete/index.html">Compete</a> |
+                        <a href="../pastcontests/index.html">Past Contests</a> |
+                        <a href="../sponsors/index.html">Sponsors</a> |
+                        <a href="index.html">Donate</a> |
+                        <a href="../team/index.html">Our Team</a> |
+                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
 
-    <main>
-        <section class="donate-hero">
-            <h1 class="fade-in">Donate</h1>
-        </section>
-        <p id="red-text">
-            All donations are tax-deductible. Email <u>sponsor@integirls.org</u> for more information.
-        </p>
-        <!-- edit the following text if you'd like to include anything or state something differently -->
-        <p class="large-text">
-            Every donation to INTEGIRLS makes a meaningful difference.
-            Your generosity empowers girls and non-binary students in STEM, supports life-changing opportunities, and helps us build a more inclusive future.
-            Thank you for believing in our mission!
-        </p>
+        <main>
+            <section class="donate-hero">
+                <h1 class="fade-in">Donate</h1>
+            </section>
+            <p id="red-text">
+                All donations are tax-deductible. Email <u>sponsor@integirls.org</u> for more information.
+            </p>
+            <!-- edit the following text if you'd like to include anything or state something differently -->
+            <p class="large-text">
+                Every donation to INTEGIRLS makes a meaningful difference.
+                Your generosity empowers girls and non-binary students in STEM, supports life-changing opportunities, and helps us build a more inclusive future.
+                Thank you for believing in our mission!
+            </p>
 
-        <!-- edit the following text to indicate what your funds will be used for, and what chapter you are -->
-        <p class="small-text">
-            All donations to INTEGIRLS [INSERT CHAPTER ABBREVIATION] will help fund our competitions, including fees for [INSERT TEXT]
-            Please specify that the donation is to the [INSERT CHAPTER ABBREVIATION] chapter. Thank you so much!
-        </p>
-    </main>
+            <!-- edit the following text to indicate what your funds will be used for, and what chapter you are -->
+            <p class="small-text">
+                All donations to INTEGIRLS [INSERT CHAPTER ABBREVIATION] will help fund our competitions, including fees for [INSERT TEXT]
+                Please specify that the donation is to the [INSERT CHAPTER ABBREVIATION] chapter. Thank you so much!
+            </p>
+        </main>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div>© 2025 INTEGIRLS [chapter]</div>
-        <div>
-            <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
-            <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
+        <!-- Footer -->
+        <div class="footer">
+            <div>© 2025 INTEGIRLS [chapter]</div>
+            <div>
+                <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
+                <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
+            </div>
         </div>
     </div>
 </body>

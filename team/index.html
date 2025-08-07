@@ -14,95 +14,92 @@
 </head>
 <body>
     <!--Announcement bar-->
-    <div id="announcement-placeholder"></div>
-    <script>
-    fetch("/announcement/announcement.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("announcement-placeholder").innerHTML = data;
-        });
-    </script>
-    <!-- Header -->
-    <div class="top-bar">
-        <table style="width: 100%;">
-            <tr>
-                <td style="text-align: left;">
-                    <span style="line-height: 1"><b>  </b></span>
-                    <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
-                    <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
-                </td>
-                <td style="text-align: right;">
-                    <a href="../index.html">Home</a> |
-                    <a href="../compete/index.html">Compete</a> |
-                    <a href="../pastcontests/index.html">Past Contests</a> |
-                    <a href="../sponsors/index.html">Sponsors</a> |
-                    <a href="../donate/index.html">Donate</a> |
-                    <a href="index.html">Our Team</a> |
-                    <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                </td>
-            </tr>
-        </table>
+    <div id="announcement-placeholder">
+        <script>
+            fetch("/announcement/announcement.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("announcement-placeholder").innerHTML = data;
+            });
+        </script>
     </div>
-
-
-</body>
-</html>
-
-    <main>
-        <section class="about-hero">
-            <div class="container">
-                <h1 class="fade-in">Our Team</h1>
-            </div>
-        </section>
-
-        <div class="container">
-            <section class="team-section">
-                <div class="team-grid">
-                    <!-- to add a team member: copy paste from <div class="team-member"> to </div> -->
-                    <!-- to edit content: <h3> section is the name, <p> is the bio of the member -->
-                    <!-- and to edit the photo upload the image online (using like imgbb or smt) then-->
-                    <!-- copy paste the link for the photo into it. i would suggest changing photo to like -->
-                    <!-- (Name)'s Photo or something -->
-                    <!-- if you want to change the background photo at the top of the page, go to about-style.css -->
-                    <!-- find .about-hero and similarly replace the url with the link to the photo -->
-                    <div class="team-member">
-                        <img src="https://placeholder.com/" alt="Photo">
-                        <h3>person 1</h3>
-                        <p>bio stuf</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://placeholder.com/" alt="Photo">
-                        <h3>person 2</h3>
-                        <p>bio stuf</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://placeholder.com/" alt="Photo">
-                        <h3>person 3</h3>
-                        <p>bio stuf</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://placeholder.com/" alt="Photo">
-                        <h3>person 4</h3>
-                        <p>bio stuf</p>
-                    </div>
-                    <div class="team-member">
-                        <img src="https://placeholder.com/" alt="Photo">
-                        <h3>person 5</h3>
-                        <p>bio stuf</p>
-                    </div>
-                    </div>
+    <div class="main-body">
+        <!-- Header -->
+        <div class="top-bar">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: left;">
+                        <span style="line-height: 1"><b>  </b></span>
+                        <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
+                        <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="../index.html">Home</a> |
+                        <a href="../compete/index.html">Compete</a> |
+                        <a href="../pastcontests/index.html">Past Contests</a> |
+                        <a href="../sponsors/index.html">Sponsors</a> |
+                        <a href="../donate/index.html">Donate</a> |
+                        <a href="index.html">Our Team</a> |
+                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <main>
+            <section class="about-hero">
+                <div class="container">
+                    <h1 class="fade-in">Our Team</h1>
+                </div>
             </section>
-        </div>
-    </main>
 
-    <!-- Footer -->
-    <div class="footer">
-        <div>© 2025 INTEGIRLS [chapter]</div>
-        <div>
-            <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
-            <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
+            <div class="container">
+                <section class="team-section">
+                    <div class="team-grid">
+                        <!-- to add a team member: copy paste from <div class="team-member"> to </div> -->
+                        <!-- to edit content: <h3> section is the name, <p> is the bio of the member -->
+                        <!-- and to edit the photo upload the image online (using like imgbb or smt) then-->
+                        <!-- copy paste the link for the photo into it. i would suggest changing photo to like -->
+                        <!-- (Name)'s Photo or something -->
+                        <!-- if you want to change the background photo at the top of the page, go to about-style.css -->
+                        <!-- find .about-hero and similarly replace the url with the link to the photo -->
+                        <div class="team-member">
+                            <img src="https://placeholder.com/" alt="Photo">
+                            <h3>person 1</h3>
+                            <p>bio stuff</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://placeholder.com/" alt="Photo">
+                            <h3>person 2</h3>
+                            <p>bio stuff</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://placeholder.com/" alt="Photo">
+                            <h3>person 3</h3>
+                            <p>bio stuff</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://placeholder.com/" alt="Photo">
+                            <h3>person 4</h3>
+                            <p>bio stuff</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://placeholder.com/" alt="Photo">
+                            <h3>person 5</h3>
+                            <p>bio stuff</p>
+                        </div>
+                        </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div>© 2025 INTEGIRLS [chapter]</div>
+            <div>
+                <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
+                <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

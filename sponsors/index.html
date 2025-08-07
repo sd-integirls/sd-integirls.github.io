@@ -14,132 +14,134 @@
 </head>
 <body>
     <!--Announcement bar-->
-    <div id="announcement-placeholder"></div>
-    <script>
-    fetch("/announcement/announcement.html")
-        .then(response => response.text())
-        .then(data => {
-        document.getElementById("announcement-placeholder").innerHTML = data;
-        });
-    </script>
-    <!-- Header -->
-    <div class="top-bar">
-        <table style="width: 100%;">
-            <tr>
-                <td style="text-align: left;">
-                    <span style="line-height: 1"><b>  </b></span>
-                    <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
-                    <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
-                </td>
-                <td style="text-align: right;">
-                    <a href="../index.html">Home</a> |
-                    <a href="../compete/index.html">Compete</a> |
-                    <a href="../pastcontests/index.html">Past Contests</a> |
-                    <a href="index.html">Sponsors</a> |
-                    <a href="../donate/index.html">Donate</a> |
-                    <a href="../team/index.html">Our Team</a> |
-                    <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                </td>
-            </tr>
-        </table>
+    <div id="announcement-placeholder">
+        <script>
+            fetch("/announcement/announcement.html")
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById("announcement-placeholder").innerHTML = data;
+            });
+        </script>
     </div>
+    <div class="main-body">
+        <!-- Header -->
+        <div class="top-bar">
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: left;">
+                        <span style="line-height: 1"><b>  </b></span>
+                        <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
+                        <span style="line-height: 1"><b>INTEGIRLS [Chapter Name]</b></span>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="../index.html">Home</a> |
+                        <a href="../compete/index.html">Compete</a> |
+                        <a href="../pastcontests/index.html">Past Contests</a> |
+                        <a href="index.html">Sponsors</a> |
+                        <a href="../donate/index.html">Donate</a> |
+                        <a href="../team/index.html">Our Team</a> |
+                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-    <main>
-        <section class="hero">
-            <h1 class="fade-in">Sponsors</h1>
-        </section>
+        <main>
+            <section class="hero">
+                <h1 class="fade-in">Sponsors</h1>
+            </section>
 
-        <!-- Add your platinum sponsors below -->
-        <!-- many chapters don't have platinum sponsors so this is left out for now -->
-        <!-- 
-        <section class="sponsor-section platinum">
-            <h2>Platinum Sponsors</h2>
-            <div class="sponsor-grid">
-                <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:100px;">
-                    <img src="sponsor-images\\citadel.png" alt="Citadel">
-                </a>
-                <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:100px;">
-                    <img src="sponsor-images\\citadel.png" alt="Citadel">
-                </a>
-        </section>
-        -->
-        
+            <!-- Add your platinum sponsors below -->
+            <!-- many chapters don't have platinum sponsors so this is left out for now -->
+            <!-- 
+            <section class="sponsor-section platinum">
+                <h2>Platinum Sponsors</h2>
+                <div class="sponsor-grid">
+                    <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:100px;">
+                        <img src="sponsor-images\\citadel.png" alt="Citadel">
+                    </a>
+                    <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:100px;">
+                        <img src="sponsor-images\\citadel.png" alt="Citadel">
+                    </a>
+            </section>
+            -->
+            
 
-        <section class="sponsor-section gold">
-            <h2>Gold Sponsors</h2>
-            <div class="sponsor-grid">
-                <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:80px;">
-                    <img src="sponsor-images\\citadel.png" alt="Citadel">
-                </a>
-                <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:80px;">
-                    <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
-                </a>
-                <!-- add more gold sponsors -->
+            <section class="sponsor-section gold">
+                <h2>Gold Sponsors</h2>
+                <div class="sponsor-grid">
+                    <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:80px;">
+                        <img src="sponsor-images\\citadel.png" alt="Citadel">
+                    </a>
+                    <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:80px;">
+                        <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
+                    </a>
+                    <!-- add more gold sponsors -->
+                </div>
+            </section>
+
+            <section class="sponsor-section silver">
+                <h2>Silver Sponsors</h2>
+                <div class="sponsor-grid">
+                    <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:70px;">
+                        <img src="sponsor-images\\citadel.png" alt="Citadel">
+                    </a>
+                    <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:70px;">
+                        <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
+                    </a>
+                </div>
+            </section>
+
+            <section class="sponsor-section bronze">
+                <h2>Bronze Sponsors</h2>
+                <div class="sponsor-grid">
+                    <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:50px;">
+                        <img src="sponsor-images\\citadel.png" alt="Citadel">
+                    </a>
+                    <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:50px;">
+                        <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
+                    </a>
+                </div>
+            </section>
+
+            <section class="sponsor-section partners">
+                <h2>Partners & Supporters</h2>
+                <div class="sponsor-grid">
+                    <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
+                        <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
+                    </a>
+                    <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
+                        <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
+                    </a>
+                    <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
+                        <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
+                    </a>
+                    <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
+                        <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
+                    </a>
+                    <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
+                        <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
+                    </a>
+                    <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:50px;">
+                        <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
+                    </a>
+                </div>
+            </section>
+            <section class="sponsor-section contact">
+                <h2>Interested in Sponsoring?</h2>
+                <p>We are always looking for sponsors and partners to help us achieve our mission.</p>
+                <p>If you or your organization is interested in supporting INTEGIRLS [Chapter Name], please reach out to <a href="mailto:email@integirls.org">email@integirls.org</a>.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div>© 2025 INTEGIRLS [chapter]</div>
+            <div>
+                <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
+                <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
             </div>
-        </section>
-
-        <section class="sponsor-section silver">
-            <h2>Silver Sponsors</h2>
-            <div class="sponsor-grid">
-                <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:70px;">
-                    <img src="sponsor-images\\citadel.png" alt="Citadel">
-                </a>
-                <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:70px;">
-                    <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
-                </a>
-            </div>
-        </section>
-
-        <section class="sponsor-section bronze">
-            <h2>Bronze Sponsors</h2>
-            <div class="sponsor-grid">
-                <a href="https://www.citadel.com/" target="_blank" class="sponsor-logo" style="height:50px;">
-                    <img src="sponsor-images\\citadel.png" alt="Citadel">
-                </a>
-                <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:50px;">
-                    <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
-                </a>
-            </div>
-        </section>
-
-        <section class="sponsor-section partners">
-            <h2>Partners & Supporters</h2>
-            <div class="sponsor-grid">
-                <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
-                    <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
-                </a>
-                <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
-                    <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
-                </a>
-                <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
-                    <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
-                </a>
-                <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
-                    <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
-                </a>
-                <a href="https://artofproblemsolving.com/" target="_blank" class="sponsor-logo" style="width:300px;">
-                    <img src="sponsor-images\\aops.png" alt="Art of Problem Solving">
-                </a>
-                <a href="https://www.non-trivial.org/" target="_blank" class="sponsor-logo" style="height:50px;">
-                    <img src="sponsor-images\\nontrivial.png" alt="Non-Trivial">
-                </a>
-            </div>
-        </section>
-        <section class="sponsor-section contact">
-            <h2>Interested in Sponsoring?</h2>
-            <p>We are always looking for sponsors and partners to help us achieve our mission.</p>
-            <p>If you or your organization is interested in supporting INTEGIRLS [Chapter Name], please reach out to <a href="mailto:email@integirls.org">email@integirls.org</a>.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <div class="footer">
-        <div>© 2025 INTEGIRLS [chapter]</div>
-        <div>
-            <a href="https://www.instagram.com/integirls.[chapter]" target="_blank">@integirls.[chapter]</a> |
-            <a href="mailto:[chapter]@integirls.org">[chapter]@integirls.org</a>
         </div>
     </div>
-
 </body>
 </html>

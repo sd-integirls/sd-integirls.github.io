@@ -1,11 +1,14 @@
 /* basic colors and stuff */
 :root {
     --primary-color: #5e4d9e;
-    --dark-color: #333333;
-    --light-color: #f4f4f4;
+    --dark-color: #2c1b2d;
+    --light-color: #C69AA4;
+    --notsolight-color: #B58A94;
     --white-color: #ffffff;
     --header-font: 'Montserrat', sans-serif;
     --body-font: 'Lato', sans-serif;
+    margin: 0 auto;
+    padding: 0 0px;
 }
 
 /* body styles */
@@ -15,6 +18,10 @@ body {
     margin: 0;
     color: var(--dark-color);
     line-height: 1.6;
+}
+
+main-body {
+    padding-top: 9vh;
 }
 
 .container {
@@ -32,17 +39,17 @@ h1, h2, h3 {
 /* about page stuff -- u can change the url of the photo depending on what you want the header to be */
 
 .about-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/1346125184/photo/group-of-successful-multiethnic-business-team.jpg?s=612x612&w=0&k=20&c=5FHgRQZSZed536rHji6w8o5Hco9JVMRe8bpgTa69hE8=') no-repeat center center/cover;
-    color: var(--white-color);
+    background-image: url('https://img.freepik.com/free-vector/sunset-city-background_1092-42.jpg'); /* replace with your chapter's background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* allows the background image to stay fixed while scrolling */
     height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
     text-align: center;
-}
-
-.about-hero h1 {
-    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
 }
 
 .team-section {
