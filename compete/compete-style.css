@@ -4,40 +4,12 @@
 /* compete css: */
 body {
     margin: 30px;
+    overscroll-behavior: none;
 }
 
 .main-body {
     padding-top: 9vh;
 }
-
-
-.header {
-	position: fixed;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	gap: 1rem;
-	align-items: center;
-	height: 9vh;
-	text-align: center;
-	background-color: pink; /* changes the color of the header box */
-	font-family: lora;
-	font-size: 40px;
-}
-
-.header p {
-    color: black; /* changes the color of the text inside the header */
-}
-
-.header button {
-    padding: 10px 30px;
-    background-color: pink; /* changes the color of the button */
-    color: black; /* changes the color of the text inside the button */
-    border-radius: 5px;
-    border-width: 1px;
-    cursor: pointer;
-}
-
 
 /* body styles */
 body {
@@ -58,7 +30,7 @@ h1, h2, h3 {
 h1 {
 	font-size: 40px;
 	font-family: Lora;
-	color: #000;
+	color: var(--dark-color);
 	text-align:center
 }
 
@@ -122,6 +94,10 @@ p{
 .p3 {
 	font-size: 22px;
 	color: #CD5C5C;
+}
+
+.thanks {
+    margin: 0px 30px 30px 30px;
 }
 
 

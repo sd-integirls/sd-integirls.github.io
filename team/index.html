@@ -16,7 +16,7 @@
     <!--Announcement bar-->
     <div id="announcement-placeholder">
         <script>
-            fetch("/announcement/announcement.html")
+            fetch("../announcement/announcement.html")
             .then(response => response.text())
             .then(data => {
             document.getElementById("announcement-placeholder").innerHTML = data;
