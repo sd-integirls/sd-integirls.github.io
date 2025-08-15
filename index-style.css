@@ -98,6 +98,9 @@ p{
 
 /* Header styles */
 .top-bar {
+    position: fixed;
+    width: 96%;
+    z-index: 9999;
     height: 80px;
     background: #b5d0ff;
     font-size: 23px;
@@ -105,7 +108,7 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px; /* adding left/right margin in header */
+    padding: 0 30px;
 }
 
 /* Logo styling for circular appearance */
