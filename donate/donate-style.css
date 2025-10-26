@@ -60,3 +60,27 @@ p {
 .small-text {
     font-size: 1.2rem;
 }
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 10 / 7;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: fine-tune for mobile */
+@media (max-width: 600px) {
+    .iframe-container iframe {
+        aspect-ratio: 1 / 1.1;
+    }
+}
