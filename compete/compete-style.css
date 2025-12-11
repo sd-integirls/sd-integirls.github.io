@@ -56,9 +56,32 @@ p{
 }
 
 
-
-
 .container {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center;
+    gap: 40px;            
+    margin: 40px auto;
+    max-width: 1600px;
+}
+
+.left_box,
+.right_box {
+    flex: 1 1 650px;    
+}
+
+.left_box img,
+.right_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text_box {
+    flex: 1 1 600px;    
+}
+
+/* .container {
   width: 100%;
   height: 100%;
 }
@@ -73,7 +96,8 @@ p{
   width: 500px;
   height: 838px;
 
-}
+} */
+
 
 
 
