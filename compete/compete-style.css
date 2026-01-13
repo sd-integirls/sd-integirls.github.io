@@ -251,7 +251,7 @@ button.next {
 /* body styles */
 body {
     font-family: var(--body-font);
-    background-color: #fdf7f7;
+    background-color: #eab9b9;
     margin: 0;
     color: var(--dark-color);
     line-height: 1.6;
@@ -315,7 +315,7 @@ p{
 }
 
 .schedule-table {
-    background-color: #fdf7f7;
+    background-color: #eab9b9;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -330,11 +330,11 @@ p{
 
 .schedule-header {
     font-weight: 700;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #717eac;
 }
 
 .schedule-row {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #7f8fc8;
 }
 
 .schedule-row:last-child {
