@@ -15,7 +15,7 @@ body {
 body {
     font-family: var(--body-font);
     /* background-color: var(--white-color); */
-    background-color:#f7eeee;
+    background-color:#fdf7f7;
     margin: 120px;
     color: var(--dark-color);
     line-height: 1.6;
@@ -251,7 +251,7 @@ button.next {
 /* body styles */
 body {
     font-family: var(--body-font);
-    background-color: var(--white-color);
+    background-color: #fdf7f7;
     margin: 0;
     color: var(--dark-color);
     line-height: 1.6;
