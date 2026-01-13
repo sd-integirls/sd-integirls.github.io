@@ -14,7 +14,8 @@ body {
 /* body styles */
 body {
     font-family: var(--body-font);
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
+    background-color:#f7eeee;
     margin: 120px;
     color: var(--dark-color);
     line-height: 1.6;
@@ -299,4 +300,43 @@ p{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.schedule-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.schedule-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.schedule-table {
+    background-color: #fdf7f7;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.schedule-header,
+.schedule-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 20px;
+    text-align: center;
+}
+
+.schedule-header {
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
+}
+
+.schedule-row {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
 }
