@@ -96,9 +96,10 @@ h1, h2, h3 {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.team-member h3 {
+.team-member h3, .team-member h4 {
     margin-top: 1rem;
     color: var(--primary-color);
+    text-align: center;
 }
 
 .team-member p {
