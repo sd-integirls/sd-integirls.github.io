@@ -26,24 +26,24 @@
     <div class="main-body">
         <!-- Header -->
         <div class="top-bar">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="text-align: left;">
-                        <span style="line-height: 1"><b>  </b></span>
-                        <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
-                        <span style="line-height: 1"><b>INTEGIRLS San Diego</b></span>
-                    </td>
-                    <td style="text-align: right;">
-                        <a href="../">Home</a> |
-                        <a href="../compete">Contest Information</a> |
-                        <a href="../pastcontests">Past Contests</a> |
-                        <a href="../sponsors">Sponsors</a> |
-                        <a href="../donate">Donate</a> |
-                        <a href="/">Our Team</a> |
-                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                    </td>
-                </tr>
-            </table>
+            <a href="../" class="brand">
+                <img src="../header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
+                <b>INTEGIRLS San Diego</b>
+            </a>
+            <!-- the ☰ button only shows up on small screens -->
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <!-- to add a page to the menu, copy one <li> line and change the link + text (do this on every page) -->
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../compete/">Contest Information</a></li>
+                <li><a href="../pastcontests/">Past Contests</a></li>
+                <li><a href="../sponsors/">Sponsors</a></li>
+                <li><a href="../donate/">Donate</a></li>
+                <li><a href="../team/" aria-current="page">Our Team</a></li>
+                <li><a href="https://www.integirls.org/" target="_blank">INTEGIRLS</a></li>
+            </ul>
         </div>
         <main>
             <section class="about-hero">
@@ -106,29 +106,11 @@
                             <p>Laira Velazquez is in sophomore year at Canyon Crest Academy. She is a passionate, excited student interested in math, astronomy, and art. In her free time, Laira plays the guitar or ukulele and likes to play survival and rhythm games.</p>
                         </div>
                         <div class="team-member">
-                            <img src="" alt="Photo">
+                            <div class="photo-placeholder">PG</div>
                             <h3>Paniz Ghasemi</h3>
                             <h4>Director of Technology</h4>
                             <p>Paniz Ghasemi is a sophomore at Canyon Crest Academy.</p>
                         </div>
-                        <!-- <div class="team-member">
-                            <img src="team-images\\maggie.png" alt="Photo">
-                            <h3>Maggie Liang</h3>
-                            <h4>Director of Operations</h4>
-                            <p>Maggie Liang is a senior at Canyon Crest Academy. She enjoys doing math, robotics, and coding. In her free time, she often plays flute, reads Dostoevsky, and struggles aimlessly with hard Alcumus problems. </p>
-                        </div> -->
-                        <!-- <div class="team-member">
-                            <img src="team-images\\sophia.webp" alt="Photo">
-                            <h3>Sophia Ahmed</h3>
-                            <h4>Director of Operations</h4>
-                            <p>Sophia Ahmed is a senior at Canyon Crest Academy. She enjoys math and different science subjects. In her free time she likes to hang out with her friends, play tennis, and read.</p>
-                        </div> -->
-                        <!-- <div class="team-member">
-                            <img src="team-images\\izzy.webp" alt="Photo">
-                            <h3>Isabella Zhou</h3>
-                            <h4>Assistant Outreach</h4>
-                            <p>Isabella Zhou is a senior at CCA and assists with outreach and grants for INTEGIRLS. Alongside assisting with other requests, Isabella also volunteers on competition days, helping grade and organize the many attending competitors.</p>
-                        </div> -->
                         <div class="team-member">
                             <img src="team-images\\linda.webp" alt="Photo">
                             <h3>Linda Yang</h3>
@@ -141,17 +123,38 @@
                             <h4>Director of Fundraising</h4>
                             <p>Luna is a junior at Canyon Crest Academy. She is passionate about STEM and creating opportunities for students to engage in math. In her free time, she enjoys playing the violin, badminton, and Mario Kart Wii.</p>
                         </div>
-                        <!-- <div class="team-member">
-                            <img src="team-images\\brianna.webp" alt="Photo">
-                            <h3>Brianna Zhang</h3>
-                            <h4>Assistant Fundraising</h4>
-                            <p>Brianna Zhang is a senior at Canyon Crest Academy. She njoys playing golf and going on walks with her dogs.</p>
-                        </div> -->
-                        <div class="team-member">
-                            <img src="team-images\\katrina.webp" alt="Photo">
+                    </div>
+                </section>
+                <section class="alumni-section" id="alumni">
+                    <h2>Alumni</h2>
+                    <p class="alumni-text">Thank you to everyone who helped build INTEGIRLS San Diego!</p>
+                    <div class="alumni-grid">
+                        <!-- when someone graduates: cut their card from the team grid above and add them here -->
+                        <!-- copy from <div class="alumni-member"> to its </div>. <h3> is the name, <h4> is their old role -->
+                        <div class="alumni-member">
+                            <img src="team-images/katrina.webp" alt="Katrina Liu">
                             <h3>Katrina Liu</h3>
-                            <h4>Alumini</h4>
-                            <p>Katrina Liu is a senior at Canyon Crest Academy. She enjoys playing golf, snowboarding, and baking.</p>
+                            <h4>Former Chapter Head</h4>
+                        </div>
+                        <div class="alumni-member">
+                            <img src="team-images/maggie.png" alt="Maggie Liang">
+                            <h3>Maggie Liang</h3>
+                            <h4>Former Director of Operations</h4>
+                        </div>
+                        <div class="alumni-member">
+                            <img src="team-images/sophia.webp" alt="Sophia Ahmed">
+                            <h3>Sophia Ahmed</h3>
+                            <h4>Former Director of Operations</h4>
+                        </div>
+                        <div class="alumni-member">
+                            <img src="team-images/izzy.webp" alt="Isabella Zhou">
+                            <h3>Isabella Zhou</h3>
+                            <h4>Former Assistant Outreach</h4>
+                        </div>
+                        <div class="alumni-member">
+                            <img src="team-images/brianna.webp" alt="Brianna Zhang">
+                            <h3>Brianna Zhang</h3>
+                            <h4>Former Assistant Fundraising</h4>
                         </div>
                     </div>
                 </section>
@@ -182,5 +185,6 @@
             </div>
         </div>
     </div>
+    <script src="../header-footer/nav.js"></script>
 </body>
 </html>

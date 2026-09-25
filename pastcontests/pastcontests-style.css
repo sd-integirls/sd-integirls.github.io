@@ -91,7 +91,7 @@ p{
     padding: 1.5rem;
     height: fit-content;
     position: sticky;
-    top: 2rem;
+    top: 100px; /* sits just below the sticky header */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -192,7 +192,26 @@ p{
 }
 
 /* Responsive Design */
+@media (max-width: 1100px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
 @media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        height: 35vh;
+        background-attachment: scroll;
+    }
+
     .contest-container {
         flex-direction: column;
         padding: 0 1rem;
@@ -222,4 +241,3 @@ p{
         text-align: center;
     }
 }
-

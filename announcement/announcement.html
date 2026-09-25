@@ -28,16 +28,17 @@
         }
 
         .announcement {
-            position: fixed;
             width: 100%;
+            box-sizing: border-box;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 1rem;
+            gap: 0.5rem 1rem;
             align-items: center;
-            height: 9vh;
+            min-height: 9vh;
+            padding: 10px 16px;
             text-align: center;
             background-color: pink; /* changes the color of the header box */
-            z-index: 9999;
         }
 
         .announcement span {
@@ -53,6 +54,15 @@
             border-radius: 5px;
             border-width: 1px;
             cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .announcement {
+                font-size: 0.9rem;
+            }
+            .announcement button {
+                padding: 6px 18px;
+            }
         }
     </style>
 </head>

@@ -84,3 +84,40 @@ p {
         aspect-ratio: 1 / 1.1;
     }
 }
+
+@media (max-width: 1100px) {
+    .donate-hero {
+        background-attachment: scroll;
+    }
+
+    p {
+        margin: 20px 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .donate-hero {
+        height: 35vh;
+    }
+
+    p {
+        margin: 20px;
+    }
+
+    .large-text {
+        font-size: 1.2rem;
+    }
+
+    .small-text {
+        font-size: 1.05rem;
+    }
+
+    .iframe-container {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}

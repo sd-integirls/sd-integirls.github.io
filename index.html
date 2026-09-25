@@ -27,24 +27,24 @@
     <div class="main-body">
         <!-- Header -->
         <div class="top-bar">
-            <table style="width: 100%;">
-                <tr>
-                    <td style="text-align: left;">
-                        <span style="line-height: 1"><b>  </b></span>
-                        <img src="header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
-                        <span style="line-height: 1"><b>INTEGIRLS San Diego</b></span>
-                    </td>
-                    <td style="text-align: right;">
-                        <a href="/">Home</a> |
-                        <a href="/compete">Contest Information</a> |
-                        <a href="/pastcontests">Past Contests</a> |
-                        <a href="/sponsors">Sponsors</a> |
-                        <a href="/donate">Donate</a> |
-                        <a href="/team">Our Team</a> |
-                        <a href="https://www.integirls.org/"  target="_blank">INTEGIRLS</a>
-                    </td>
-                </tr>
-            </table>
+            <a href="./" class="brand">
+                <img src="header-footer/ig_logo.jpg" alt="Logo" class="header-logo">
+                <b>INTEGIRLS San Diego</b>
+            </a>
+            <!-- the ☰ button only shows up on small screens -->
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <!-- to add a page to the menu, copy one <li> line and change the link + text (do this on every page) -->
+            <ul class="nav-links">
+                <li><a href="./" aria-current="page">Home</a></li>
+                <li><a href="compete/">Contest Information</a></li>
+                <li><a href="pastcontests/">Past Contests</a></li>
+                <li><a href="sponsors/">Sponsors</a></li>
+                <li><a href="donate/">Donate</a></li>
+                <li><a href="team/">Our Team</a></li>
+                <li><a href="https://www.integirls.org/" target="_blank">INTEGIRLS</a></li>
+            </ul>
         </div>
 
         <main>
@@ -113,5 +113,6 @@
             </div>
         </div>
     </div>
+    <script src="header-footer/nav.js"></script>
 </body>
 </html>

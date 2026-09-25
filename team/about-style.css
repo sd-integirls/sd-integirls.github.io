@@ -21,8 +21,8 @@ body {
     overscroll-behavior: none;
 }
 
-main-body {
-    padding-top: 9vh;
+.main-body {
+    padding-top: 0; /* header is sticky now */
 }
 
 .container {
@@ -120,4 +120,150 @@ h1, h2, h3 {
     border: 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* shown instead of a photo when someone doesn't have one yet (their initials) */
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 4px solid var(--white-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    background-color: var(--notsolight-color);
+    color: var(--white-color);
+    font-family: var(--header-font);
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* alumni section: same look as the team cards, just smaller and without bios */
+.alumni-section {
+    padding: 0 0 3rem;
+    text-align: center;
+}
+
+.alumni-section h2 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.alumni-text {
+    color: #555;
+    margin: 0 0 2rem;
+}
+
+.alumni-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.alumni-member {
+    background: var(--light-color);
+    padding: 1.25rem 1rem;
+    width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.alumni-member:hover {
+    transform: translateY(-5px);
+}
+
+.alumni-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--white-color);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.alumni-member h3 {
+    font-size: 1.15rem;
+    margin: 0.75rem 0 0.25rem;
+    color: var(--primary-color);
+}
+
+.alumni-member h4 {
+    font-size: 0.9rem;
+    margin: 0;
+    color: var(--dark-color);
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ============================================================
+   Screen-size adjustments (media queries)
+   ============================================================ */
+
+@media (max-width: 1100px) {
+    .about-hero {
+        background-attachment: scroll;
+    }
+}
+
+/* phones */
+@media (max-width: 700px) {
+    .about-hero {
+        height: 35vh;
+    }
+
+    .team-section {
+        padding: 2.5rem 0;
+    }
+
+    /* team cards fill the screen width */
+    .team-member {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .team-member h3 {
+        font-size: 1.5rem;
+    }
+
+    .team-member h4 {
+        font-size: 1.1rem;
+    }
+
+    /* alumni: two per row */
+    .alumni-grid {
+        gap: 12px;
+    }
+
+    .alumni-member {
+        width: calc(50% - 6px);
+        padding: 1rem 0.5rem;
+    }
+
+    .alumni-member img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .alumni-member h3 {
+        font-size: 1rem;
+    }
+
+    .alumni-member h4 {
+        font-size: 0.8rem;
+    }
+
+    .join-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .join-iframe iframe {
+        height: 700px;
+    }
 }
